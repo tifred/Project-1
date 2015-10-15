@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Project 1 Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700,400,300,200,100" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Using grid system from bootstrap (i.e. container class)
+       Standard media breakpoints: 768, 992, 1200. -->
+
+  <div class="container">
+
+    <!-- Header.
+         Icon and text sized down at media breakpoints.-->
+
+    <header class="row">
+      <div class="col-xs-2">
+        <div class="openwebicons-cc-remix"></div>
+      </div>
+      <div class="col-xs-10 text-right text-uppercase">
+         <h1 class="header-name">Eduardo Zanzibar</h1>
+         <h4 class="header-title">Front-End Nunchuck</h4>
+      </div>
+    </header>
+
+    <!-- Horizontal Divider -->
+
+    <div class="horizontal-divider"> </div>
+
+    <!-- Large Picture (i.e. Hero) and Biography (at 1200px and above).
+
+         Provides six potential sources for user agent.
+         Images cropped as they decrease in size. 
+         Last media option is at 1px so devices with 
+         2x ratios (mobile) can use better quality image. -->
+ 
+
+    <main class="row">
+      <div class="col-sm-12 col-lg-9">
+        <picture>
+          <source media="(min-width: 1200px)" 
+                  srcset="images/palm-large-1x.jpg 1x, images/palm-large-2x.jpg 2x">
+          <source media="(min-width: 992px)" 
+                  srcset="images/palm-medium-1x.jpg 1x, images/palm-medium-2x.jpg 2x">
+          <source media="(min-width: 1px)" 
+                  srcset="images/palm-small-1x.jpg 1x, images/palm-small-2x.jpg 2x">
+          <img src="images/palm-small-1x.jpg" 
+               class="img-responsive img-rounded" 
+               alt="Palm Tree in the Desert">
+        </picture>
+      </div>
+
+      <!-- Biography only visible here above 1200px breakpoint. -->
+
+      <div class="col-lg-3 visible-lg">
+        <p class="bio-header">An Oasis in the Wasteland</p>
+        <p class="bio-text">Following a cultured middle-class upbringing in New York City, during which he displayed a talent for music and writing, Bowles pursued his education at the University of Virginia before making several trips to Paris in the 1930s. He studied music with Aaron Copland, and in New York wrote music for theatrical productions, as well as other compositions. He achieved critical and popular success with his first novel The Sheltering Sky (1949), set in what was known as French North Africa, which he had visited in 1931.  In 1947 Bowles settled in Tangier, Morocco, and his wife Jane Bowles followed in 1948. Except for winters spent in Sri Lanka (then known as Ceylon) during the early 1950s, Tangier was Bowles' home for the remainder of his life. He came to symbolize American expatriates in the city.  Paul Bowles died in 1999 at the age of 88. His ashes are buried near family graves in Lakemont Cemetery in upstate New York.</p>
+      </div>
+    </main>
+
+    <!-- Featured Work -->
+
+    <section class="row">
+      <div class="col-sm-12">
+        <h2 class="featured-title">Featured Work</h2>
+      </div>
+    </section>
+
+    <!-- Three Columns of Three Elements.
+
+         Smaller versions of images are uncropped, just smaller in size.
+
+         Three columns collapse to one at 768px.
+         Devices with pixel ratios of 2 and up will use
+         medium and large versions below 768px.
+
+         Two images swap positions at 992 breakpoint. -->
+
+    <section class="row text-center">
+      <div class="col-sm-4 col-md-push-4 featured-box">
+        <img class="img-responsive img-rounded"
+             src="images/tanz-720.jpg"
+             srcset="images/tanz-1440.jpg 1440w,
+                     images/tanz-1000.jpg 1000w,
+                     images/tanz-720.jpg 720w,
+                     images/tanz-586.jpg 586w,
+                     images/tanz-440.jpg 440w,
+                     images/tanz-360.jpg 360w,
+                     images/tanz-220.jpg 220w"
+             sizes="(min-width: 768px) 33.3vw,
+                    100vw"
+             alt="Dancers in the Desert">
+         <h3 class="text-uppercase">Tanz Theatre</h3>
+         <h5>http://github.com/udacity/tanztheatre/</h5>
+      </div>
+      <div class="col-sm-4 col-md-pull-4 featured-box">
+        <img class="img-responsive img-rounded"
+             src="images/makena-720.jpg"
+             srcset="images/makena-1440.jpg 1440w,
+                     images/makena-1000.jpg 1000w,
+                     images/makena-720.jpg 720w,
+                     images/makena-586.jpg 586w,
+                     images/makena-440.jpg 440w,
+                     images/makena-360.jpg 360w,
+                     images/makena-220.jpg 220w"
+             sizes="(min-width: 768px) 33.3vw,
+                    100vw"
+             alt="On The Beach">
+         <h3 class="text-uppercase">Makena</h3>
+         <h5>http://github.com/udacity/makena/</h5>
+      </div>
+      <div class="col-sm-4 featured-box">
+        <img class="img-responsive img-rounded"
+             src="images/dahlia-720.jpg"
+             srcset="images/dahlia-1440.jpg 1440w,
+                     images/dahlia-1000.jpg 1000w,
+                     images/dahlia-720.jpg 720w,
+                     images/dahlia-586.jpg 586w,
+                     images/dahlia-440.jpg 440w,
+                     images/dahlia-360.jpg 360w,
+                     images/dahlia-220.jpg 220w"
+             sizes="(min-width: 768px) 33.3vw,
+                    100vw"
+             alt="A Dahlia">
+         <h3 class="text-uppercase">Dahlia</h3>
+         <h5>http://github.com/udacity/dahlia/</h5>
+      </div>
+    </section>
+
+      <!-- Biography only visible here below 1200px breakpoint. -->
+
+      <div class="col-sm-12 col-md-12 hidden-lg">
+        <p class="bio-header">An Oasis in the Wasteland</p>
+        <p class="bio-text">Following a cultured middle-class upbringing in New York City, during which he displayed a talent for music and writing, Bowles pursued his education at the University of Virginia before making several trips to Paris in the 1930s. He studied music with Aaron Copland, and in New York wrote music for theatrical productions, as well as other compositions. He achieved critical and popular success with his first novel The Sheltering Sky (1949), set in what was known as French North Africa, which he had visited in 1931.  In 1947 Bowles settled in Tangier, Morocco, and his wife Jane Bowles followed in 1948. Except for winters spent in Sri Lanka (then known as Ceylon) during the early 1950s, Tangier was Bowles' home for the remainder of his life. He came to symbolize American expatriates in the city.  Paul Bowles died in 1999 at the age of 88. His ashes are buried near family graves in Lakemont Cemetery in upstate New York.</p>
+      </div>
+
+    <!-- Links to Social Media Sites -->
+
+    <footer class="row text-center">
+      <div class="col-xs-3"></div>
+      <div class="col-xs-2">
+        <a href="http://twitter.com" class="zocial-twitter"></a>
+      </div>
+      <div class="col-xs-2">
+        <a href="http://songkick.com" class="zocial-songkick"></a>
+      </div>
+      <div class="col-xs-2">
+        <a href="http://facebook.com" class="zocial-facebook"></a>
+      </div><div class="col-xs-3">
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

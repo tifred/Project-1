@@ -1,0 +1,124 @@
+@import url(http://weloveiconfonts.com/api/?family=openwebicons|zocial);
+
+/* openwebicons */
+[class*="openwebicons-"]:before {
+  font-family: "OpenWeb Icons", sans-serif;
+  font-size: 90px;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 30px;
+  transition: font-size 2s;
+}
+
+* {
+  font-family: Lato, sans-serif; font-weight: 400;
+}
+
+
+/* Headers */
+
+.header-name {
+  font-weight: 100;
+  font-size: 60px;
+  transition: font-size 0.5s;
+}
+
+.header-title {
+  font-size: 24px;
+  transition: font-size 0.5s;
+}
+
+
+/* Biography */
+
+.bio-header {
+  font-size: 20px;
+}
+
+.bio-box-top,
+.bio-box-bottom {
+  font-size: 16px;
+}
+
+.bio-box-bottom {
+  padding-top: 20px;
+}
+
+
+/* Featured Work */
+
+.featured-title {
+  color: #5d513f;
+  font-size: 40px;
+}
+
+.featured-box {
+  padding-bottom: 30px;
+}
+
+
+/* Other classes */
+
+.horizontal-divider {
+  width: 100%;
+  height: 3px;
+  background-color: #4a9dcb;
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: lightgray;
+}
+
+footer {
+  margin: 20px;
+}
+
+
+/* Media breakpoint changes */
+
+@media screen and (min-width: 1200px) {
+  .bio-box-bottom {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-name {
+    font-size: 50px;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .bio-box-top {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-name {
+    font-size: 40px;
+  }
+  .header-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-name {
+    font-size: 30px;
+  }
+  .header-title {
+    font-size: 12px;
+  }
+  [class*="openwebicons-"]:before {
+    font-family: "OpenWeb Icons", sans-serif;
+    font-size: 50px;
+  }
+  .featured-title {
+    text-align: center; 
+  }
+}
